@@ -1,0 +1,53 @@
+[
+  {
+    "id":1,
+    "nome":"Ana Souza",
+    "foto":"https://i.pravatar.cc/150?img=1",
+    "cargo":"Desenvolvedora Front-End",
+    "resumo":"Especialista em interfaces e acessibilidade.",
+    "localizacao":"São Paulo/SP",
+    "area":"Desenvolvimento",
+    "habilidadesTecnicas":["React","JavaScript","CSS"],
+    "softSkills":["Comunicação","Trabalho em equipe"],
+    "experiencias":[{"empresa":"Empresa A","cargo":"Front-End","inicio":"2019-01","fim":"2022-06","descricao":"Desenvolvimento de SPA"}],
+    "formacao":[{"curso":"Bacharel em Ciência da Computação","instituicao":"Universidade X","ano":2018}],
+    "projetos":[{"titulo":"Projeto A","link":"https://example.com","descricao":"Demo"}],
+    "certificacoes":["AWS Certified"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["IA ética"]
+  },
+  {
+    "id":2,
+    "nome":"Lucas Oliveira",
+    "foto":"https://i.pravatar.cc/150?img=2",
+    "cargo":"Analista de Dados",
+    "resumo":"Transformando dados em decisões.",
+    "localizacao":"Rio de Janeiro/RJ",
+    "area":"Dados",
+    "habilidadesTecnicas":["Python","SQL","Power BI"],
+    "softSkills":["Resiliência","Colaboração"],
+    "experiencias":[{"empresa":"Empresa B","cargo":"Analista","inicio":"2018-03","fim":"2021-12","descricao":"Análise e dashboards"}],
+    "formacao":[{"curso":"BSc Estatística","instituicao":"Universidade Y","ano":2017}],
+    "projetos":[{"titulo":"Data Project","link":"https://example.com","descricao":"Analytics"}],
+    "certificacoes":["Google Data Analytics"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Fintech"]
+  },
+  {
+    "id":3,
+    "nome":"Mariana Lima",
+    "foto":"https://i.pravatar.cc/150?img=3",
+    "cargo":"UX Designer",
+    "resumo":"Foco em experiência centrada no usuário.",
+    "localizacao":"Belo Horizonte/MG",
+    "area":"Design",
+    "habilidadesTecnicas":["Figma","Prototipagem","Pesquisa"],
+    "softSkills":["Empatia","Comunicação"],
+    "experiencias":[{"empresa":"Studio C","cargo":"UX","inicio":"2017-05","fim":"2022-08","descricao":"Design de produtos digitais"}],
+    "formacao":[{"curso":"Design","instituicao":"Universidade Z","ano":2016}],
+    "projetos":[{"titulo":"UX Case","link":"https://example.com","descricao":"Pesquisa e protótipo"}],
+    "certificacoes":["Nielsen Norman"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["Educação"]
+  }
+]

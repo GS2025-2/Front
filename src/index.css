@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --linkedin-blue: #0a66c2;
+  --linkedin-light: #f3f2ef;
+  --linkedin-dark: #1d2226;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--linkedin-light);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #1d1d1d;
+}
+
+.dark {
+  background-color: var(--linkedin-dark);
+  color: #f9fafb;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-[color:var(--linkedin-blue)] transition font-medium;
+}
+.dark .nav-link {
+  @apply text-gray-300 hover:text-blue-400;
+}
+
+.btn-primary {
+  @apply bg-[color:var(--linkedin-blue)] text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition;
+}
+.btn-secondary {
+  @apply bg-white text-[color:var(--linkedin-blue)] border border-[color:var(--linkedin-blue)] px-4 py-2 rounded-lg hover:bg-blue-50 transition;
+}
+.dark .btn-secondary {
+  @apply bg-gray-800 text-white border border-gray-600 hover:bg-gray-700;
+}
+
+.profile-card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition p-5 flex flex-col;
+}
+.profile-card:hover .profile-name {
+  @apply text-[color:var(--linkedin-blue)];
+}
+.profile-img {
+  @apply w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm;
+}
+
+.modal-bg {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center;
+}
+.modal-content {
+  @apply bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-3xl w-full shadow-2xl;
+}
+
+.input, select {
+  @apply px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-[color:var(--linkedin-blue)];
+}
+
+.skill {
+  @apply text-xs font-medium px-2 py-1 rounded-full bg-blue-50 text-[color:var(--linkedin-blue)];
+}
+.dark .skill {
+  @apply bg-gray-700 text-blue-300;
+}
