@@ -1,68 +1,177 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --linkedin-blue: #0a66c2;
   --linkedin-light: #f3f2ef;
-  --linkedin-dark: #1d2226;
+  --linkedin-dark: #0f172a; /* fundo escuro moderno */
+  --linkedin-card-dark: #1e293b; /* azul petróleo */
+  --linkedin-accent: #3b82f6; /* azul vibrante para hover */
 }
 
+/* GERAL */
 html, body, #root {
   height: 100%;
   background-color: var(--linkedin-light);
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  color: #1d1d1d;
+  color: #1e1e1e;
 }
 
 .dark {
   background-color: var(--linkedin-dark);
-  color: #f9fafb;
+  color: #e5e7eb;
 }
 
 .container {
   @apply max-w-6xl mx-auto px-4;
 }
 
-.nav-link {
-  @apply text-gray-600 hover:text-[color:var(--linkedin-blue)] transition font-medium;
-}
-.dark .nav-link {
-  @apply text-gray-300 hover:text-blue-400;
+/* NAV */
+.navbar {
+  @apply bg-white dark:bg-[color:var(--linkedin-card-dark)] shadow-md p-4 flex justify-between items-center rounded-b-xl border-b border-gray-200 dark:border-gray-700;
 }
 
-.btn-primary {
-  @apply bg-[color:var(--linkedin-blue)] text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition;
+.navbar-title {
+  @apply text-xl font-bold text-[color:var(--linkedin-blue)] dark:text-[color:var(--linkedin-accent)];
 }
+
+.nav-link {
+  @apply text-gray-700 hover:text-[color:var(--linkedin-blue)] transition font-medium;
+}
+.dark .nav-link {
+  @apply text-gray-300 hover:text-[color:var(--linkedin-accent)];
+}
+
+/* BOTÕES GERAIS */
+.btn-primary {
+  @apply bg-[color:var(--linkedin-blue)] text-white px-4 py-2 rounded-lg font-medium hover:bg-[color:var(--linkedin-accent)] transition;
+}
+.dark .btn-primary {
+  @apply bg-[color:var(--linkedin-accent)] hover:bg-blue-500 text-white;
+}
+
 .btn-secondary {
   @apply bg-white text-[color:var(--linkedin-blue)] border border-[color:var(--linkedin-blue)] px-4 py-2 rounded-lg hover:bg-blue-50 transition;
 }
 .dark .btn-secondary {
-  @apply bg-gray-800 text-white border border-gray-600 hover:bg-gray-700;
+  @apply bg-transparent text-blue-300 border border-blue-500 hover:bg-blue-700/40;
 }
 
+/* === BOTÃO DE MODO CLARO/ESCURO === */
+.btn-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: #f9fafb !important;
+  color: var(--linkedin-blue) !important;
+  border: 1px solid var(--linkedin-blue) !important;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  line-height: 1;
+  height: 38px; /* impede o botão de mudar de tamanho */
+  user-select: none;
+}
+
+.btn-toggle svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-toggle:hover {
+  background-color: #e0f2ff !important;
+}
+
+/* --- MODO ESCURO --- */
+.dark .btn-toggle {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #ffffff !important;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+.dark .btn-toggle:hover {
+  background-color: #f3f4f6 !important;
+  color: var(--linkedin-blue) !important;
+}
+
+/* ÍCONES DE SOL/LUA */
+.btn-toggle .icon-sun {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.dark .btn-toggle .icon-sun {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.btn-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+.dark .btn-toggle .icon-moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* PERFIL */
 .profile-card {
-  @apply bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition p-5 flex flex-col;
+  @apply bg-white dark:bg-[color:var(--linkedin-card-dark)] rounded-xl shadow-md hover:shadow-lg transition p-5 flex flex-col;
+}
+.profile-name {
+  @apply text-[color:var(--linkedin-blue)] dark:text-[color:var(--linkedin-accent)] font-semibold transition;
 }
 .profile-card:hover .profile-name {
   @apply text-[color:var(--linkedin-blue)];
 }
 .profile-img {
-  @apply w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm;
+  @apply w-16 h-16 rounded-full object-cover border-2 border-white dark:border-gray-600 shadow-sm;
+}
+.dark .profile-card p {
+  @apply text-gray-300;
 }
 
+/* MODAL */
 .modal-bg {
-  @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center;
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center;
 }
 .modal-content {
-  @apply bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-3xl w-full shadow-2xl;
+  @apply bg-white dark:bg-[color:var(--linkedin-card-dark)] rounded-2xl p-6 max-w-3xl w-full shadow-2xl border dark:border-gray-700;
 }
 
+/* INPUT */
 .input, select {
-  @apply px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-[color:var(--linkedin-blue)];
+  @apply px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e293b] text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-[color:var(--linkedin-accent)];
 }
 
+/* SKILLS */
 .skill {
-  @apply text-xs font-medium px-2 py-1 rounded-full bg-blue-50 text-[color:var(--linkedin-blue)];
+  @apply text-xs font-medium px-2 py-1 rounded-full bg-blue-100 text-[color:var(--linkedin-blue)];
 }
 .dark .skill {
-  @apply bg-gray-700 text-blue-300;
+  @apply bg-blue-800/40 text-blue-300;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* STATUS DE BEM-ESTAR */
+.status-ok {
+  @apply bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300;
+}
+.status-alerta {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300;
+}
+.status-perigo {
+  @apply bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300;
 }
