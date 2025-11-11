@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Swal from 'sweetalert2'
 
 export default function ProfileModal({ profile, onClose }) {
   const [message, setMessage] = useState('')
@@ -8,13 +9,53 @@ export default function ProfileModal({ profile, onClose }) {
 
   const sendMessage = () => {
     if (!message.trim()) return
-    alert(`Mensagem enviada para ${profile.nome}: "${message}"`)
+    Swal.fire({
+      icon: 'success',
+      title: 'Mensagem enviada!',
+      text: `Sua mensagem foi enviada para ${profile.nome}: "${message}"`,
+      confirmButtonColor: '#0A66C2',
+    })
     setMessage('')
   }
 
   const recommend = () => {
     setRecommended(true)
-    alert(`${profile.nome} foi recomendado!`)
+    Swal.fire({
+      icon: 'success',
+      title: 'Recomendação feita!',
+      text: `${profile.nome} foi recomendado com sucesso.`,
+      confirmButtonColor: '#0A66C2',
+    })
+  }
+
+  const toggleWellness = () => {
+    if (!bem) {
+      Swal.fire({
+        icon: 'info',
+        title: 'Sem dados de bem-estar',
+        text: `${profile.nome} ainda não possui informações registradas.`,
+        confirmButtonColor: '#0A66C2',
+      })
+      return
+    }
+
+    if (!showWellness) {
+      Swal.fire({
+        title: '🧘‍♂️ Dados de Bem-Estar',
+        html: `
+          <div style="text-align:left; line-height:1.6;">
+            <p><strong>🌡️ Temperatura:</strong> ${bem.temperatura}°C</p>
+            <p><strong>💡 Luminosidade:</strong> ${bem.luminosidade} lux</p>
+            <p><strong>🔊 Som:</strong> ${bem.som}</p>
+            <p style="margin-top:8px; color:#555;">${bem.status}</p>
+          </div>
+        `,
+        confirmButtonText: 'Fechar',
+        confirmButtonColor: '#0A66C2',
+        background: '#f8fafc',
+      })
+    }
+    setShowWellness((prev) => !prev)
   }
 
   return (
@@ -88,42 +129,10 @@ export default function ProfileModal({ profile, onClose }) {
               </button>
 
               {/* 🧘‍♂️ Botão de Bem-Estar */}
-              {bem && (
-                <button
-                  onClick={() => setShowWellness((prev) => !prev)}
-                  className={`btn-secondary ${
-                    showWellness
-                      ? 'bg-[color:var(--linkedin-blue)] text-white'
-                      : ''
-                  }`}
-                >
-                  {showWellness ? 'Fechar Bem-Estar' : 'Bem-Estar'}
-                </button>
-              )}
+              <button onClick={toggleWellness} className="btn-secondary">
+                Bem-Estar
+              </button>
             </div>
-
-            {/* Painel Bem-Estar — aparece só ao clicar */}
-            {showWellness && bem && (
-              <div className="mt-5 bg-blue-50 dark:bg-gray-800 p-4 rounded-xl animate-fade-in">
-                <h3 className="font-semibold text-[color:var(--linkedin-blue)] mb-2">
-                  Dados de Bem-Estar
-                </h3>
-                <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                  <li>
-                    🌡️ <strong>Temperatura:</strong> {bem.temperatura}°C
-                  </li>
-                  <li>
-                    💡 <strong>Luminosidade:</strong> {bem.luminosidade} lux
-                  </li>
-                  <li>
-                    🔊 <strong>Som:</strong> {bem.som}
-                  </li>
-                </ul>
-                <p className="mt-2 text-gray-600 dark:text-gray-400 text-xs">
-                  {bem.status}
-                </p>
-              </div>
-            )}
           </div>
         </div>
       </div>
