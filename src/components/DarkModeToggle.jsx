@@ -6,7 +6,14 @@ export default function DarkModeToggle({ theme, setTheme }) {
   return (
     <button
       onClick={handleClick}
-      className="px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+      className={`
+        flex items-center gap-2 rounded-lg border text-sm font-medium transition-all duration-300 px-4 py-2
+        ${theme === 'dark'
+          ? 'bg-white text-gray-900 border-gray-300 hover:bg-gray-100 hover:text-[color:var(--linkedin-blue)]'
+          : 'bg-[color:var(--linkedin-blue)] text-white border-transparent hover:bg-[#005bb5]'
+        }
+      `}
+      style={{ height: '40px' }} // impede mudança de tamanho ao clicar
     >
       {theme === 'dark' ? '☀️ Modo Claro' : '🌙 Modo Escuro'}
     </button>
