@@ -1,53 +1,1164 @@
 [
   {
-    "id":1,
-    "nome":"Ana Souza",
-    "foto":"https://i.pravatar.cc/150?img=1",
-    "cargo":"Desenvolvedora Front-End",
-    "resumo":"Especialista em interfaces e acessibilidade.",
-    "localizacao":"São Paulo/SP",
-    "area":"Desenvolvimento",
-    "habilidadesTecnicas":["React","JavaScript","CSS"],
-    "softSkills":["Comunicação","Trabalho em equipe"],
-    "experiencias":[{"empresa":"Empresa A","cargo":"Front-End","inicio":"2019-01","fim":"2022-06","descricao":"Desenvolvimento de SPA"}],
-    "formacao":[{"curso":"Bacharel em Ciência da Computação","instituicao":"Universidade X","ano":2018}],
-    "projetos":[{"titulo":"Projeto A","link":"https://example.com","descricao":"Demo"}],
-    "certificacoes":["AWS Certified"],
-    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
-    "areaInteresses":["IA ética"]
+    "id": 1,
+    "nome": "Ana Souza",
+    "foto": "https://i.pravatar.cc/150?img=1",
+    "cargo": "Desenvolvedora Front-End",
+    "resumo": "Especialista em interfaces e acessibilidade.",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "JavaScript", "CSS"],
+    "softSkills": ["Comunicação", "Trabalho em equipe"],
+    "experiencias": [
+      {"empresa": "WebPlus", "cargo": "Front-End Jr", "inicio": "2020-05", "fim": "2024-11", "descricao": "Criação de interfaces e componentes reutilizáveis."}
+    ],
+    "formacao": [
+      {"curso": "Sistemas de Informação", "instituicao": "USP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Portal Acessível", "link": "https://github.com/anasouza", "descricao": "Site voltado à acessibilidade digital."}
+    ],
+    "certificacoes": ["Google UX Design"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["UI/UX", "Front-End"],
+    "bemEstar": {
+      "temperatura": 24.3,
+      "luminosidade": 650,
+      "som": "Silencioso",
+      "status": "Ambiente confortável — bom rendimento"
+    }
   },
   {
-    "id":2,
-    "nome":"Lucas Oliveira",
-    "foto":"https://i.pravatar.cc/150?img=2",
-    "cargo":"Analista de Dados",
-    "resumo":"Transformando dados em decisões.",
-    "localizacao":"Rio de Janeiro/RJ",
-    "area":"Dados",
-    "habilidadesTecnicas":["Python","SQL","Power BI"],
-    "softSkills":["Resiliência","Colaboração"],
-    "experiencias":[{"empresa":"Empresa B","cargo":"Analista","inicio":"2018-03","fim":"2021-12","descricao":"Análise e dashboards"}],
-    "formacao":[{"curso":"BSc Estatística","instituicao":"Universidade Y","ano":2017}],
-    "projetos":[{"titulo":"Data Project","link":"https://example.com","descricao":"Analytics"}],
-    "certificacoes":["Google Data Analytics"],
-    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
-    "areaInteresses":["Fintech"]
+    "id": 2,
+    "nome": "Bruno Martins",
+    "foto": "https://i.pravatar.cc/150?img=2",
+    "cargo": "Analista de Dados",
+    "resumo": "Transforma dados em insights estratégicos.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Análise de Dados",
+    "habilidadesTecnicas": ["Python", "SQL", "Power BI"],
+    "softSkills": ["Pensamento analítico", "Resolução de problemas"],
+    "experiencias": [
+      {"empresa": "DataCorp", "cargo": "Data Analyst", "inicio": "2021-03", "fim": "2024-09", "descricao": "Criação de dashboards e relatórios dinâmicos."}
+    ],
+    "formacao": [
+      {"curso": "Estatística", "instituicao": "UFMG", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "Painel de Vendas", "link": "https://github.com/brunomartins", "descricao": "Dashboard para monitoramento de vendas mensais."}
+    ],
+    "certificacoes": ["Microsoft Power BI Expert"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Ciência de Dados"],
+    "bemEstar": {
+      "temperatura": 26.8,
+      "luminosidade": 700,
+      "som": "Moderado",
+      "status": "Ambiente neutro — foco estável"
+    }
   },
   {
-    "id":3,
-    "nome":"Mariana Lima",
-    "foto":"https://i.pravatar.cc/150?img=3",
-    "cargo":"UX Designer",
-    "resumo":"Foco em experiência centrada no usuário.",
-    "localizacao":"Belo Horizonte/MG",
-    "area":"Design",
-    "habilidadesTecnicas":["Figma","Prototipagem","Pesquisa"],
-    "softSkills":["Empatia","Comunicação"],
-    "experiencias":[{"empresa":"Studio C","cargo":"UX","inicio":"2017-05","fim":"2022-08","descricao":"Design de produtos digitais"}],
-    "formacao":[{"curso":"Design","instituicao":"Universidade Z","ano":2016}],
-    "projetos":[{"titulo":"UX Case","link":"https://example.com","descricao":"Pesquisa e protótipo"}],
-    "certificacoes":["Nielsen Norman"],
-    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
-    "areaInteresses":["Educação"]
+    "id": 3,
+    "nome": "Douglas Rocha",
+    "foto": "https://i.pravatar.cc/150?img=3",
+    "cargo": "UX Designer",
+    "resumo": "Aprimora a experiência do usuário com foco em usabilidade.",
+    "localizacao": "Curitiba/PR",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Adobe XD", "Prototipagem"],
+    "softSkills": ["Empatia", "Comunicação visual"],
+    "experiencias": [
+      {"empresa": "DesignLab", "cargo": "UX Designer", "inicio": "2019-08", "fim": "2024-10", "descricao": "Criação de fluxos e protótipos de alta fidelidade."}
+    ],
+    "formacao": [
+      {"curso": "Design Digital", "instituicao": "PUC-PR", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "App de Mobilidade Urbana", "link": "https://github.com/camilarocha", "descricao": "App intuitivo para transporte público local."}
+    ],
+    "certificacoes": ["UX Research Specialist"],
+    "idiomas": [{"idioma": "Espanhol", "nivel": "Intermediário"}],
+    "areaInteresses": ["Design centrado no usuário"],
+    "bemEstar": {
+      "temperatura": 22.4,
+      "luminosidade": 610,
+      "som": "Silencioso",
+      "status": "Ambiente tranquilo — ótimo para foco criativo"
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Diego Nascimento",
+    "foto": "https://i.pravatar.cc/150?img=4",
+    "cargo": "Desenvolvedor Back-End",
+    "resumo": "Focado em performance e arquitetura escalável.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Node.js", "Express", "MongoDB"],
+    "softSkills": ["Pensamento lógico", "Colaboração"],
+    "experiencias": [
+      {"empresa": "TechServe", "cargo": "Backend Dev", "inicio": "2020-01", "fim": "2024-11", "descricao": "Desenvolvimento de APIs REST e integração de sistemas."}
+    ],
+    "formacao": [
+      {"curso": "Ciência da Computação", "instituicao": "UFRGS", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "API Financeira", "link": "https://github.com/diegonascimento", "descricao": "Serviço de controle de transações bancárias."}
+    ],
+    "certificacoes": ["AWS Fundamentals"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Back-End", "DevOps"],
+    "bemEstar": {
+      "temperatura": 25.7,
+      "luminosidade": 640,
+      "som": "Moderado",
+      "status": "Ambiente produtivo — bom equilíbrio térmico"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Eduarda Lima",
+    "foto": "https://i.pravatar.cc/150?img=5",
+    "cargo": "Gestora de Projetos",
+    "resumo": "Coordena equipes multidisciplinares com foco em resultados.",
+    "localizacao": "Recife/PE",
+    "area": "Gestão",
+    "habilidadesTecnicas": ["Scrum", "Kanban", "Jira"],
+    "softSkills": ["Liderança", "Organização"],
+    "experiencias": [
+      {"empresa": "AgilePro", "cargo": "Project Manager", "inicio": "2018-06", "fim": "2024-08", "descricao": "Gerenciamento de projetos ágeis e sprints semanais."}
+    ],
+    "formacao": [
+      {"curso": "Administração", "instituicao": "UFPE", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "Plataforma de Gestão", "link": "https://github.com/eduardalima", "descricao": "Sistema de acompanhamento de tarefas e times ágeis."}
+    ],
+    "certificacoes": ["PMP", "Scrum Master"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Gestão ágil"],
+    "bemEstar": {
+      "temperatura": 27.9,
+      "luminosidade": 710,
+      "som": "Moderado",
+      "status": "Ambiente ativo — boa energia para reuniões"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Felipe Andrade",
+    "foto": "https://i.pravatar.cc/150?img=6",
+    "cargo": "Engenheiro de Software",
+    "resumo": "Constrói sistemas complexos com foco em escalabilidade.",
+    "localizacao": "Brasília/DF",
+    "area": "Engenharia de Software",
+    "habilidadesTecnicas": ["Java", "Spring Boot", "Docker"],
+    "softSkills": ["Resolução de problemas", "Pensamento crítico"],
+    "experiencias": [
+      {"empresa": "CodeNation", "cargo": "Software Engineer", "inicio": "2020-02", "fim": "2024-10", "descricao": "Criação de microsserviços e pipelines automatizados."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Software", "instituicao": "UnB", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "API de Pagamentos", "link": "https://github.com/felipeandrade", "descricao": "Sistema seguro de pagamentos e cobranças online."}
+    ],
+    "certificacoes": ["Oracle Java Professional"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Arquitetura de sistemas"],
+    "bemEstar": {
+      "temperatura": 23.5,
+      "luminosidade": 680,
+      "som": "Silencioso",
+      "status": "Ambiente ideal — foco total"
+    }
+  },
+  {
+    "id": 7,
+    "nome": "Gabriela Torres",
+    "foto": "https://i.pravatar.cc/150?img=7",
+    "cargo": "Cientista de Dados",
+    "resumo": "Analisa grandes volumes de dados para gerar previsões.",
+    "localizacao": "Florianópolis/SC",
+    "area": "Ciência de Dados",
+    "habilidadesTecnicas": ["Python", "TensorFlow", "Pandas"],
+    "softSkills": ["Curiosidade", "Comunicação técnica"],
+    "experiencias": [
+      {"empresa": "InsightAI", "cargo": "Data Scientist", "inicio": "2020-07", "fim": "2024-11", "descricao": "Desenvolvimento de modelos preditivos para marketing."}
+    ],
+    "formacao": [
+      {"curso": "Matemática Aplicada", "instituicao": "UFSC", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Modelo de Churn", "link": "https://github.com/gabrielatorres", "descricao": "Predição de evasão de clientes em e-commerce."}
+    ],
+    "certificacoes": ["Data Science Professional Certificate"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Machine Learning"],
+    "bemEstar": {
+      "temperatura": 21.8,
+      "luminosidade": 600,
+      "som": "Silencioso",
+      "status": "Ambiente calmo — ideal para análise"
+    }
+  },
+  {
+    "id": 8,
+    "nome": "Henrique Carvalho",
+    "foto": "https://i.pravatar.cc/150?img=8",
+    "cargo": "DevOps Engineer",
+    "resumo": "Automatiza processos e mantém infraestrutura escalável.",
+    "localizacao": "Campinas/SP",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["AWS", "Docker", "Kubernetes"],
+    "softSkills": ["Organização", "Proatividade"],
+    "experiencias": [
+      {"empresa": "CloudNet", "cargo": "DevOps", "inicio": "2019-11", "fim": "2024-09", "descricao": "Automatização de deploys e monitoramento de sistemas."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UNICAMP", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Infra como Código", "link": "https://github.com/henriquecarvalho", "descricao": "Automação de ambientes com Terraform."}
+    ],
+    "certificacoes": ["AWS Certified DevOps Engineer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Cloud Computing"],
+    "bemEstar": {
+      "temperatura": 28.4,
+      "luminosidade": 700,
+      "som": "Moderado",
+      "status": "Ambiente quente — hidratação recomendada"
+    }
+  },
+  {
+    "id": 9,
+    "nome": "Isabela Costa",
+    "foto": "https://i.pravatar.cc/150?img=9",
+    "cargo": "QA Engineer",
+    "resumo": "Garante a qualidade de software com testes automatizados.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Qualidade",
+    "habilidadesTecnicas": ["Selenium", "Cypress", "Jest"],
+    "softSkills": ["Atenção aos detalhes", "Raciocínio lógico"],
+    "experiencias": [
+      {"empresa": "BugFree", "cargo": "QA Analyst", "inicio": "2020-03", "fim": "2024-11", "descricao": "Criação e execução de testes automatizados."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Software", "instituicao": "UFC", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Test Suite E-commerce", "link": "https://github.com/isabelacosta", "descricao": "Automação de testes para loja virtual."}
+    ],
+    "certificacoes": ["ISTQB Foundation"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Automação de Testes"],
+    "bemEstar": {
+      "temperatura": 29.2,
+      "luminosidade": 710,
+      "som": "Barulhento",
+      "status": "Ambiente quente — pausas curtas indicadas"
+    }
+  },
+  {
+    "id": 10,
+    "nome": "João Pedro Reis",
+    "foto": "https://i.pravatar.cc/150?img=10",
+    "cargo": "Desenvolvedor Mobile",
+    "resumo": "Cria aplicativos nativos e híbridos com performance.",
+    "localizacao": "Salvador/BA",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Flutter", "Dart", "Firebase"],
+    "softSkills": ["Criatividade", "Atenção aos detalhes"],
+    "experiencias": [
+      {"empresa": "AppHouse", "cargo": "Mobile Developer", "inicio": "2021-01", "fim": "2024-09", "descricao": "Desenvolvimento de apps Android e iOS"}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UFBA", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "App Delivery Rápido", "link": "https://github.com/joaopedroreis", "descricao": "Aplicativo de entregas com mapa em tempo real"}
+    ],
+    "certificacoes": ["Flutter Certified Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Desenvolvimento mobile"],
+    "bemEstar": {
+      "temperatura": 30.1,
+      "luminosidade": 720,
+      "som": "Barulhento",
+      "status": "Ambiente quente — pausa para descanso sugerida"
+    }
+  },
+
+  {
+    "id": 11,
+    "nome": "Larissa Monteiro",
+    "foto": "https://i.pravatar.cc/150?img=11",
+    "cargo": "Product Owner",
+    "resumo": "Responsável por alinhar as necessidades do cliente com o produto final.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Gestão de Produto",
+    "habilidadesTecnicas": ["Scrum", "Roadmap", "Gestão de Requisitos"],
+    "softSkills": ["Comunicação", "Visão estratégica"],
+    "experiencias": [
+      {"empresa": "SoftBridge", "cargo": "PO", "inicio": "2020-06", "fim": "2024-11", "descricao": "Gestão de backlog e priorização de entregas."}
+    ],
+    "formacao": [
+      {"curso": "Administração", "instituicao": "FGV", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Plataforma de Serviços Digitais", "link": "https://github.com/larissamonteiro", "descricao": "Liderança no desenvolvimento de um hub de serviços online."}
+    ],
+    "certificacoes": ["Certified Scrum Product Owner (CSPO)"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Gestão de Produtos", "Inovação"],
+    "bemEstar": {
+      "temperatura": 27.5,
+      "luminosidade": 690,
+      "som": "Moderado",
+      "status": "Ambiente ativo — bom ritmo de trabalho"
+    }
+  },
+  {
+    "id": 12,
+    "nome": "Rafael Brito",
+    "foto": "https://i.pravatar.cc/150?img=12",
+    "cargo": "Engenheiro de Dados",
+    "resumo": "Cria pipelines robustos e eficientes para grandes volumes de dados.",
+    "localizacao": "São Paulo/SP",
+    "area": "Engenharia de Dados",
+    "habilidadesTecnicas": ["Spark", "Airflow", "Python"],
+    "softSkills": ["Raciocínio lógico", "Trabalho em equipe"],
+    "experiencias": [
+      {"empresa": "DataFlow", "cargo": "Data Engineer", "inicio": "2019-09", "fim": "2024-11", "descricao": "Implantação de pipelines ETL e orquestração de dados."}
+    ],
+    "formacao": [
+      {"curso": "Ciência da Computação", "instituicao": "USP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Pipeline de Dados Financeiros", "link": "https://github.com/rafaelbrito", "descricao": "Processamento em larga escala de dados bancários."}
+    ],
+    "certificacoes": ["Google Cloud Data Engineer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Big Data", "Cloud"],
+    "bemEstar": {
+      "temperatura": 24.7,
+      "luminosidade": 640,
+      "som": "Silencioso",
+      "status": "Ambiente estável — ideal para foco técnico"
+    }
+  },
+  {
+    "id": 13,
+    "nome": "Tatiane Farias",
+    "foto": "https://i.pravatar.cc/150?img=13",
+    "cargo": "Desenvolvedora Full Stack",
+    "resumo": "Atua no desenvolvimento de aplicações completas, do front ao back-end.",
+    "localizacao": "Natal/RN",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "Node.js", "PostgreSQL"],
+    "softSkills": ["Proatividade", "Resolução de problemas"],
+    "experiencias": [
+      {"empresa": "WebCore", "cargo": "Full Stack Dev", "inicio": "2020-04", "fim": "2024-11", "descricao": "Criação e manutenção de sistemas web integrados."}
+    ],
+    "formacao": [
+      {"curso": "Sistemas de Informação", "instituicao": "UFRN", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Sistema de Agendamentos", "link": "https://github.com/tatianefarias", "descricao": "Aplicativo web completo com autenticação e API REST."}
+    ],
+    "certificacoes": ["Full Stack Developer Bootcamp"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Desenvolvimento Web"],
+    "bemEstar": {
+      "temperatura": 29.3,
+      "luminosidade": 710,
+      "som": "Barulhento",
+      "status": "Ambiente quente — pausas curtas recomendadas"
+    }
+  },
+  {
+    "id": 14,
+    "nome": "Gustavo Almeida",
+    "foto": "https://i.pravatar.cc/150?img=14",
+    "cargo": "Administrador de Redes",
+    "resumo": "Garante a segurança e disponibilidade de redes corporativas.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Cisco", "Firewall", "VPN"],
+    "softSkills": ["Organização", "Raciocínio lógico"],
+    "experiencias": [
+      {"empresa": "NetSecure", "cargo": "Network Admin", "inicio": "2018-05", "fim": "2024-11", "descricao": "Monitoramento e otimização de redes corporativas."}
+    ],
+    "formacao": [
+      {"curso": "Redes de Computadores", "instituicao": "CEFET-MG", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "Infraestrutura Segura", "link": "https://github.com/gustavoalmeida", "descricao": "Configuração de VPN e balanceamento de carga."}
+    ],
+    "certificacoes": ["CCNA", "Network+"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Técnico"}],
+    "areaInteresses": ["Segurança de Rede"],
+    "bemEstar": {
+      "temperatura": 26.1,
+      "luminosidade": 690,
+      "som": "Moderado",
+      "status": "Ambiente estável — desempenho consistente"
+    }
+  },
+  {
+    "id": 15,
+    "nome": "Helena Ribeiro",
+    "foto": "https://i.pravatar.cc/150?img=15",
+    "cargo": "Cientista de UX",
+    "resumo": "Analisa comportamento de usuários para otimizar experiências digitais.",
+    "localizacao": "Curitiba/PR",
+    "area": "Pesquisa de Usuário",
+    "habilidadesTecnicas": ["User Research", "Figma", "Heatmaps"],
+    "softSkills": ["Empatia", "Escuta ativa"],
+    "experiencias": [
+      {"empresa": "InsightDesign", "cargo": "UX Researcher", "inicio": "2019-03", "fim": "2024-11", "descricao": "Condução de testes de usabilidade e entrevistas de usuário."}
+    ],
+    "formacao": [
+      {"curso": "Design de Interação", "instituicao": "PUC-PR", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Estudo de Usabilidade E-commerce", "link": "https://github.com/helenaribeiro", "descricao": "Pesquisa de comportamento de compra online."}
+    ],
+    "certificacoes": ["UX Research Advanced"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Pesquisa de UX", "Design Inclusivo"],
+    "bemEstar": {
+      "temperatura": 22.2,
+      "luminosidade": 630,
+      "som": "Silencioso",
+      "status": "Ambiente calmo — ideal para análise qualitativa"
+    }
+  },
+  {
+    "id": 16,
+    "nome": "Leonardo Castro",
+    "foto": "https://i.pravatar.cc/150?img=16",
+    "cargo": "Desenvolvedor de Jogos",
+    "resumo": "Cria experiências imersivas e interativas em múltiplas plataformas.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Game Development",
+    "habilidadesTecnicas": ["Unity", "C#", "Blender"],
+    "softSkills": ["Criatividade", "Persistência"],
+    "experiencias": [
+      {"empresa": "PixelArts", "cargo": "Game Dev", "inicio": "2020-02", "fim": "2024-11", "descricao": "Desenvolvimento de jogos 2D e 3D multiplataforma."}
+    ],
+    "formacao": [
+      {"curso": "Jogos Digitais", "instituicao": "UNISINOS", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Jogo Aventura Espacial", "link": "https://github.com/leonardocastro", "descricao": "Jogo 3D educativo sobre o sistema solar."}
+    ],
+    "certificacoes": ["Unity Certified Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Realidade Virtual", "Design de Jogos"],
+    "bemEstar": {
+      "temperatura": 25.8,
+      "luminosidade": 670,
+      "som": "Moderado",
+      "status": "Ambiente equilibrado — foco criativo alto"
+    }
+  },
+  {
+    "id": 17,
+    "nome": "Mariana Duarte",
+    "foto": "https://i.pravatar.cc/150?img=17",
+    "cargo": "Especialista em Marketing Digital",
+    "resumo": "Cria estratégias digitais baseadas em dados e performance.",
+    "localizacao": "São Luís/MA",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["SEO", "Google Ads", "Analytics"],
+    "softSkills": ["Comunicação", "Análise crítica"],
+    "experiencias": [
+      {"empresa": "AdBoost", "cargo": "Digital Strategist", "inicio": "2018-10", "fim": "2024-11", "descricao": "Gestão de campanhas e análise de métricas de marketing."}
+    ],
+    "formacao": [
+      {"curso": "Publicidade e Propaganda", "instituicao": "UFMA", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "Campanha Social Media 360", "link": "https://github.com/marianaduarte", "descricao": "Estratégia de crescimento orgânico e pago para e-commerce."}
+    ],
+    "certificacoes": ["Google Ads Professional"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Marketing de Performance"],
+    "bemEstar": {
+      "temperatura": 30.3,
+      "luminosidade": 740,
+      "som": "Barulhento",
+      "status": "Ambiente quente — foco reduzido, hidratação sugerida"
+    }
+  },
+  {
+    "id": 18,
+    "nome": "Pedro Santana",
+    "foto": "https://i.pravatar.cc/150?img=18",
+    "cargo": "Desenvolvedor Python",
+    "resumo": "Cria scripts e aplicações escaláveis com foco em automação.",
+    "localizacao": "Campinas/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Django", "Flask"],
+    "softSkills": ["Lógica", "Autonomia"],
+    "experiencias": [
+      {"empresa": "AutoTech", "cargo": "Python Dev", "inicio": "2020-01", "fim": "2024-11", "descricao": "Desenvolvimento de APIs e automação de processos empresariais."}
+    ],
+    "formacao": [
+      {"curso": "Ciência da Computação", "instituicao": "UNICAMP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Bot de Processos", "link": "https://github.com/pedrosantana", "descricao": "Automatização de tarefas administrativas via scripts Python."}
+    ],
+    "certificacoes": ["Python Institute PCEP"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Técnico"}],
+    "areaInteresses": ["Automação", "APIs"],
+    "bemEstar": {
+      "temperatura": 25.2,
+      "luminosidade": 650,
+      "som": "Silencioso",
+      "status": "Ambiente confortável — produtividade alta"
+    }
+  },
+  {
+    "id": 19,
+    "nome": "Renata Gomes",
+    "foto": "https://i.pravatar.cc/150?img=19",
+    "cargo": "Analista de Segurança da Informação",
+    "resumo": "Monitora vulnerabilidades e previne incidentes de segurança.",
+    "localizacao": "Vitória/ES",
+    "area": "Segurança da Informação",
+    "habilidadesTecnicas": ["Pentest", "SIEM", "Linux"],
+    "softSkills": ["Atenção aos detalhes", "Tomada de decisão"],
+    "experiencias": [
+      {"empresa": "SecureTech", "cargo": "Security Analyst", "inicio": "2019-09", "fim": "2024-11", "descricao": "Análise de logs e prevenção de ataques cibernéticos."}
+    ],
+    "formacao": [
+      {"curso": "Segurança da Informação", "instituicao": "UVV", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Firewall Inteligente", "link": "https://github.com/renatagomes", "descricao": "Sistema de monitoramento automatizado de tráfego."}
+    ],
+    "certificacoes": ["CompTIA Security+"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Cibersegurança"],
+    "bemEstar": {
+      "temperatura": 26.9,
+      "luminosidade": 680,
+      "som": "Moderado",
+      "status": "Ambiente neutro — foco estável"
+    }
+  },
+  {
+    "id": 20,
+    "nome": "Thiago Fernandes",
+    "foto": "https://i.pravatar.cc/150?img=20",
+    "cargo": "Engenheiro de Machine Learning",
+    "resumo": "Desenvolve modelos preditivos e sistemas inteligentes.",
+    "localizacao": "São Paulo/SP",
+    "area": "Inteligência Artificial",
+    "habilidadesTecnicas": ["Python", "TensorFlow", "Scikit-learn"],
+    "softSkills": ["Análise crítica", "Aprendizado contínuo"],
+    "experiencias": [
+      {"empresa": "AI Systems", "cargo": "ML Engineer", "inicio": "2021-02", "fim": "2024-11", "descricao": "Treinamento e deploy de modelos de IA em produção."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia da Computação", "instituicao": "USP", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "Modelo de Recomendação", "link": "https://github.com/thiagofernandes", "descricao": "Sistema de recomendação de produtos com IA."}
+    ],
+    "certificacoes": ["TensorFlow Developer Certificate"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Machine Learning", "IA Ética"],
+    "bemEstar": {
+      "temperatura": 24.1,
+      "luminosidade": 640,
+      "som": "Silencioso",
+      "status": "Ambiente ideal — alta concentração"
+    }
+  },
+  {
+    "id": 21,
+    "nome": "Aline Correia",
+    "foto": "https://i.pravatar.cc/150?img=21",
+    "cargo": "Desenvolvedora Front-End",
+    "resumo": "Cria interfaces modernas e responsivas com foco em usabilidade.",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "TypeScript", "Next.js"],
+    "softSkills": ["Colaboração", "Atenção aos detalhes"],
+    "experiencias": [
+      {"empresa": "FrontLab", "cargo": "Frontend Dev", "inicio": "2020-06", "fim": "2024-11", "descricao": "Desenvolvimento de componentes reutilizáveis e acessíveis."}
+    ],
+    "formacao": [
+      {"curso": "Sistemas de Informação", "instituicao": "FIAP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Dashboard Financeiro", "link": "https://github.com/alinecorreia", "descricao": "Painel web interativo para controle financeiro pessoal."}
+    ],
+    "certificacoes": ["Front-End Developer Professional"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["UI/UX", "Front-End"],
+    "bemEstar": {
+      "temperatura": 25.4,
+      "luminosidade": 670,
+      "som": "Silencioso",
+      "status": "Ambiente equilibrado — produtividade alta"
+    }
+  },
+  {
+    "id": 22,
+    "nome": "Bernardo Leite",
+    "foto": "https://i.pravatar.cc/150?img=22",
+    "cargo": "Administrador de Banco de Dados",
+    "resumo": "Especialista em desempenho, replicação e segurança de dados.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Banco de Dados",
+    "habilidadesTecnicas": ["PostgreSQL", "MySQL", "Oracle"],
+    "softSkills": ["Organização", "Responsabilidade"],
+    "experiencias": [
+      {"empresa": "DataTrust", "cargo": "DBA", "inicio": "2019-02", "fim": "2024-11", "descricao": "Administração e tuning de bancos de dados corporativos."}
+    ],
+    "formacao": [
+      {"curso": "Análise e Desenvolvimento de Sistemas", "instituicao": "IFCE", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Backup Automático", "link": "https://github.com/bernardoleite", "descricao": "Script de backup incremental e restauração automatizada."}
+    ],
+    "certificacoes": ["Oracle Certified Associate"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Técnico"}],
+    "areaInteresses": ["Administração de Dados"],
+    "bemEstar": {
+      "temperatura": 28.7,
+      "luminosidade": 710,
+      "som": "Moderado",
+      "status": "Ambiente quente — foco reduzido, hidratação sugerida"
+    }
+  },
+  {
+    "id": 23,
+    "nome": "Clara Menezes",
+    "foto": "https://i.pravatar.cc/150?img=23",
+    "cargo": "Designer Gráfica",
+    "resumo": "Desenvolve identidades visuais e materiais digitais criativos.",
+    "localizacao": "João Pessoa/PB",
+    "area": "Design",
+    "habilidadesTecnicas": ["Illustrator", "Photoshop", "Figma"],
+    "softSkills": ["Criatividade", "Trabalho em equipe"],
+    "experiencias": [
+      {"empresa": "VisualUp", "cargo": "Graphic Designer", "inicio": "2018-10", "fim": "2024-11", "descricao": "Criação de logotipos, banners e materiais institucionais."}
+    ],
+    "formacao": [
+      {"curso": "Design Gráfico", "instituicao": "UNIPÊ", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "Branding Sustentável", "link": "https://github.com/claramenezes", "descricao": "Criação de identidade visual para marca ecológica."}
+    ],
+    "certificacoes": ["Adobe Certified Expert"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Design Sustentável"],
+    "bemEstar": {
+      "temperatura": 26.2,
+      "luminosidade": 720,
+      "som": "Barulhento",
+      "status": "Ambiente agitado — pausas visuais indicadas"
+    }
+  },
+  {
+    "id": 24,
+    "nome": "Daniel Pires",
+    "foto": "https://i.pravatar.cc/150?img=24",
+    "cargo": "Engenheiro de Software",
+    "resumo": "Cria sistemas escaláveis e de alta disponibilidade.",
+    "localizacao": "Recife/PE",
+    "area": "Engenharia de Software",
+    "habilidadesTecnicas": ["Java", "Spring Boot", "Kafka"],
+    "softSkills": ["Pensamento analítico", "Autonomia"],
+    "experiencias": [
+      {"empresa": "CodeLink", "cargo": "Software Engineer", "inicio": "2020-01", "fim": "2024-11", "descricao": "Desenvolvimento de microsserviços distribuídos."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia da Computação", "instituicao": "UFPE", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Sistema de Logística", "link": "https://github.com/danielpires", "descricao": "Solução completa para rastreamento de entregas."}
+    ],
+    "certificacoes": ["Java SE 11 Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Arquitetura de Software"],
+    "bemEstar": {
+      "temperatura": 24.8,
+      "luminosidade": 660,
+      "som": "Silencioso",
+      "status": "Ambiente equilibrado — ideal para codificação"
+    }
+  },
+  {
+    "id": 25,
+    "nome": "Eduardo Campos",
+    "foto": "https://i.pravatar.cc/150?img=25",
+    "cargo": "Analista de Sistemas",
+    "resumo": "Analisa, modela e implementa soluções corporativas eficientes.",
+    "localizacao": "Salvador/BA",
+    "area": "Análise de Sistemas",
+    "habilidadesTecnicas": ["UML", "SQL", "Java"],
+    "softSkills": ["Comunicação", "Planejamento"],
+    "experiencias": [
+      {"empresa": "SysPro", "cargo": "Analista de Sistemas", "inicio": "2019-03", "fim": "2024-11", "descricao": "Modelagem de processos e integração de sistemas legados."}
+    ],
+    "formacao": [
+      {"curso": "Sistemas de Informação", "instituicao": "UFBA", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "ERP Corporativo", "link": "https://github.com/eduardocampos", "descricao": "Sistema de gestão integrado para pequenas empresas."}
+    ],
+    "certificacoes": ["ITIL Foundation"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Análise de Processos"],
+    "bemEstar": {
+      "temperatura": 27.9,
+      "luminosidade": 680,
+      "som": "Moderado",
+      "status": "Ambiente ativo — foco moderado"
+    }
+  },
+  {
+    "id": 26,
+    "nome": "Fernanda Vasconcelos",
+    "foto": "https://i.pravatar.cc/150?img=26",
+    "cargo": "Engenheira de QA",
+    "resumo": "Especialista em automação de testes e qualidade de software.",
+    "localizacao": "Campinas/SP",
+    "area": "Qualidade de Software",
+    "habilidadesTecnicas": ["Cypress", "Postman", "Jenkins"],
+    "softSkills": ["Detalhismo", "Comunicação"],
+    "experiencias": [
+      {"empresa": "TestPro", "cargo": "QA Engineer", "inicio": "2020-07", "fim": "2024-11", "descricao": "Criação de frameworks de testes e pipelines CI/CD."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Software", "instituicao": "UNICAMP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Suite de Testes E2E", "link": "https://github.com/fernandavasconcelos", "descricao": "Automação completa de testes de regressão."}
+    ],
+    "certificacoes": ["ISTQB Advanced Test Analyst"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Automação de Testes"],
+    "bemEstar": {
+      "temperatura": 25.6,
+      "luminosidade": 670,
+      "som": "Silencioso",
+      "status": "Ambiente ótimo — foco mantido"
+    }
+  },
+  {
+    "id": 27,
+    "nome": "Gabriel Moura",
+    "foto": "https://i.pravatar.cc/150?img=27",
+    "cargo": "Administrador de Sistemas",
+    "resumo": "Garante o funcionamento contínuo e seguro de servidores.",
+    "localizacao": "Brasília/DF",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Linux", "Ansible", "Docker"],
+    "softSkills": ["Responsabilidade", "Resolução de problemas"],
+    "experiencias": [
+      {"empresa": "SysOps", "cargo": "SysAdmin", "inicio": "2018-05", "fim": "2024-11", "descricao": "Gerenciamento de servidores e automação de infraestrutura."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UnB", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "Monitoramento Centralizado", "link": "https://github.com/gabrielmoura", "descricao": "Sistema de monitoramento e alertas com Prometheus e Grafana."}
+    ],
+    "certificacoes": ["Red Hat Certified Engineer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Técnico"}],
+    "areaInteresses": ["Infraestrutura em Nuvem"],
+    "bemEstar": {
+      "temperatura": 26.3,
+      "luminosidade": 700,
+      "som": "Moderado",
+      "status": "Ambiente neutro — ritmo estável"
+    }
+  },
+  {
+    "id": 28,
+    "nome": "Heloísa Martins",
+    "foto": "https://i.pravatar.cc/150?img=28",
+    "cargo": "Arquiteta de Soluções",
+    "resumo": "Projeta soluções escaláveis integrando diversas tecnologias.",
+    "localizacao": "Curitiba/PR",
+    "area": "Arquitetura de TI",
+    "habilidadesTecnicas": ["AWS", "Microservices", "Docker"],
+    "softSkills": ["Visão sistêmica", "Comunicação técnica"],
+    "experiencias": [
+      {"empresa": "InovaTech", "cargo": "Solution Architect", "inicio": "2020-01", "fim": "2024-11", "descricao": "Definição de padrões e arquitetura corporativa."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Software", "instituicao": "UTFPR", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Arquitetura de E-commerce", "link": "https://github.com/heloisamartins", "descricao": "Desenho de arquitetura modular e resiliente para lojas virtuais."}
+    ],
+    "certificacoes": ["AWS Solutions Architect Associate"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Cloud", "Arquitetura de Microsserviços"],
+    "bemEstar": {
+      "temperatura": 23.8,
+      "luminosidade": 660,
+      "som": "Silencioso",
+      "status": "Ambiente ideal — foco estratégico elevado"
+    }
+  },
+  {
+    "id": 29,
+    "nome": "Igor Ribeiro",
+    "foto": "https://i.pravatar.cc/150?img=29",
+    "cargo": "Engenheiro de Robótica",
+    "resumo": "Desenvolve sistemas autônomos e soluções de automação inteligente.",
+    "localizacao": "Florianópolis/SC",
+    "area": "Robótica",
+    "habilidadesTecnicas": ["ROS", "C++", "Arduino"],
+    "softSkills": ["Criatividade", "Raciocínio lógico"],
+    "experiencias": [
+      {"empresa": "RoboSys", "cargo": "Robotics Engineer", "inicio": "2020-05", "fim": "2024-11", "descricao": "Criação de robôs móveis e sistemas de controle embarcado."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia Mecatrônica", "instituicao": "UFSC", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Robô Autônomo", "link": "https://github.com/igorribeiro", "descricao": "Robô de mapeamento e navegação autônoma indoor."}
+    ],
+    "certificacoes": ["Certified Robotics Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Automação Industrial", "IA aplicada à Robótica"],
+    "bemEstar": {
+      "temperatura": 24.9,
+      "luminosidade": 670,
+      "som": "Silencioso",
+      "status": "Ambiente equilibrado — ideal para testes técnicos"
+    }
+  },
+  {
+    "id": 30,
+    "nome": "Juliana Freitas",
+    "foto": "https://i.pravatar.cc/150?img=30",
+    "cargo": "Desenvolvedora iOS",
+    "resumo": "Cria aplicativos iOS otimizados e com excelente UX.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Desenvolvimento Mobile",
+    "habilidadesTecnicas": ["Swift", "Xcode", "CoreData"],
+    "softSkills": ["Criatividade", "Detalhismo"],
+    "experiencias": [
+      {"empresa": "AppMaker", "cargo": "iOS Dev", "inicio": "2021-03", "fim": "2024-11", "descricao": "Desenvolvimento de apps nativos com Swift e integração API."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UFRJ", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "App Saúde+", "link": "https://github.com/julianafreitas", "descricao": "Aplicativo iOS para controle de hábitos saudáveis."}
+    ],
+    "certificacoes": ["Apple iOS Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Desenvolvimento iOS"],
+    "bemEstar": {
+      "temperatura": 28.2,
+      "luminosidade": 720,
+      "som": "Moderado",
+      "status": "Ambiente ativo — energia criativa elevada"
+    }
+  },
+  {
+    "id": 31,
+    "nome": "Larissa Duarte",
+    "foto": "https://i.pravatar.cc/150?img=31",
+    "cargo": "Cientista de Dados",
+    "resumo": "Transforma grandes volumes de dados em insights estratégicos.",
+    "localizacao": "São Paulo/SP",
+    "area": "Ciência de Dados",
+    "habilidadesTecnicas": ["Python", "Pandas", "TensorFlow"],
+    "softSkills": ["Curiosidade", "Pensamento analítico"],
+    "experiencias": [
+      {"empresa": "DataLab", "cargo": "Data Scientist", "inicio": "2020-02", "fim": "2024-11", "descricao": "Modelagem de dados e predição de comportamento de clientes."}
+    ],
+    "formacao": [
+      {"curso": "Estatística", "instituicao": "USP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Predição de Vendas", "link": "https://github.com/larissaduarte", "descricao": "Modelo preditivo para estimar demanda de produtos."}
+    ],
+    "certificacoes": ["Google Data Analytics"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Machine Learning", "Big Data"],
+    "bemEstar": {
+      "temperatura": 23.9,
+      "luminosidade": 650,
+      "som": "Silencioso",
+      "status": "Ambiente tranquilo — foco profundo em análises"
+    }
+  },
+  {
+    "id": 32,
+    "nome": "Marcos Vinícius Rocha",
+    "foto": "https://i.pravatar.cc/150?img=32",
+    "cargo": "DevOps Engineer",
+    "resumo": "Integra e automatiza pipelines para entrega contínua de software.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "DevOps",
+    "habilidadesTecnicas": ["Docker", "Kubernetes", "Jenkins"],
+    "softSkills": ["Proatividade", "Trabalho em equipe"],
+    "experiencias": [
+      {"empresa": "CloudOps", "cargo": "DevOps Engineer", "inicio": "2019-05", "fim": "2024-11", "descricao": "Implantação de CI/CD e monitoramento de ambientes em nuvem."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "PUC Minas", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Infra-as-Code", "link": "https://github.com/marcosvrocha", "descricao": "Automação completa de infraestrutura usando Terraform."}
+    ],
+    "certificacoes": ["AWS Certified DevOps Engineer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["Automação", "Cloud Computing"],
+    "bemEstar": {
+      "temperatura": 27.5,
+      "luminosidade": 700,
+      "som": "Moderado",
+      "status": "Ambiente ativo — ideal para operações contínuas"
+    }
+  },
+  {
+    "id": 33,
+    "nome": "Natália Cardoso",
+    "foto": "https://i.pravatar.cc/150?img=33",
+    "cargo": "Engenheira de Dados",
+    "resumo": "Constrói pipelines de dados escaláveis e resilientes.",
+    "localizacao": "Curitiba/PR",
+    "area": "Engenharia de Dados",
+    "habilidadesTecnicas": ["Spark", "Airflow", "SQL"],
+    "softSkills": ["Organização", "Resolução de problemas"],
+    "experiencias": [
+      {"empresa": "DataBridge", "cargo": "Data Engineer", "inicio": "2020-01", "fim": "2024-11", "descricao": "Criação e manutenção de pipelines em ambiente de nuvem."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UTFPR", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Pipeline Financeiro", "link": "https://github.com/nataliacardoso", "descricao": "Pipeline de ETL para dados de transações financeiras."}
+    ],
+    "certificacoes": ["Google Cloud Data Engineer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Big Data", "ETL"],
+    "bemEstar": {
+      "temperatura": 24.6,
+      "luminosidade": 680,
+      "som": "Silencioso",
+      "status": "Ambiente estável — desempenho otimizado"
+    }
+  },
+  {
+    "id": 34,
+    "nome": "Otávio Nascimento",
+    "foto": "https://i.pravatar.cc/150?img=34",
+    "cargo": "Desenvolvedor Back-End",
+    "resumo": "Cria APIs performáticas e seguras para aplicações corporativas.",
+    "localizacao": "Goiânia/GO",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Node.js", "Express", "MongoDB"],
+    "softSkills": ["Autonomia", "Foco em resultados"],
+    "experiencias": [
+      {"empresa": "TechFlow", "cargo": "Backend Dev", "inicio": "2021-03", "fim": "2024-11", "descricao": "Criação de APIs REST e microsserviços em Node.js."}
+    ],
+    "formacao": [
+      {"curso": "Ciência da Computação", "instituicao": "UFG", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "API de E-commerce", "link": "https://github.com/otavionascimento", "descricao": "API escalável com autenticação JWT e integração de pagamentos."}
+    ],
+    "certificacoes": ["Node.js Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Desenvolvimento Web"],
+    "bemEstar": {
+      "temperatura": 26.4,
+      "luminosidade": 690,
+      "som": "Moderado",
+      "status": "Ambiente confortável — ritmo constante"
+    }
+  },
+  {
+    "id": 35,
+    "nome": "Patrícia Lima",
+    "foto": "https://i.pravatar.cc/150?img=35",
+    "cargo": "Gestora de Projetos",
+    "resumo": "Coordena equipes e garante entregas eficientes e de qualidade.",
+    "localizacao": "Natal/RN",
+    "area": "Gestão",
+    "habilidadesTecnicas": ["Scrum", "Kanban", "Jira"],
+    "softSkills": ["Liderança", "Comunicação"],
+    "experiencias": [
+      {"empresa": "AgileCorp", "cargo": "Project Manager", "inicio": "2018-09", "fim": "2024-11", "descricao": "Gestão de múltiplos projetos de TI com metodologias ágeis."}
+    ],
+    "formacao": [
+      {"curso": "Administração de Empresas", "instituicao": "UFRN", "ano": 2017}
+    ],
+    "projetos": [
+      {"titulo": "PM Dashboard", "link": "https://github.com/patricialima", "descricao": "Painel de acompanhamento de sprints e indicadores de projeto."}
+    ],
+    "certificacoes": ["PMP", "Scrum Master"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Gestão Ágil"],
+    "bemEstar": {
+      "temperatura": 25.8,
+      "luminosidade": 710,
+      "som": "Moderado",
+      "status": "Ambiente ativo — foco na coordenação"
+    }
+  },
+  {
+    "id": 36,
+    "nome": "Rafael Barbosa",
+    "foto": "https://i.pravatar.cc/150?img=36",
+    "cargo": "Analista de Segurança da Informação",
+    "resumo": "Garante a integridade e confidencialidade dos sistemas corporativos.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Segurança da Informação",
+    "habilidadesTecnicas": ["Pentest", "SIEM", "Linux"],
+    "softSkills": ["Atenção aos detalhes", "Ética profissional"],
+    "experiencias": [
+      {"empresa": "CyberSafe", "cargo": "Security Analyst", "inicio": "2020-06", "fim": "2024-11", "descricao": "Monitoramento e mitigação de incidentes de segurança."}
+    ],
+    "formacao": [
+      {"curso": "Redes de Computadores", "instituicao": "PUCRS", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Sistema de Alerta de Intrusão", "link": "https://github.com/rafaelbarbosa", "descricao": "Detecção automatizada de vulnerabilidades em rede local."}
+    ],
+    "certificacoes": ["CEH", "CompTIA Security+"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["Cibersegurança"],
+    "bemEstar": {
+      "temperatura": 22.7,
+      "luminosidade": 640,
+      "som": "Silencioso",
+      "status": "Ambiente seguro — alta concentração"
+    }
+  },
+  {
+    "id": 37,
+    "nome": "Sabrina Andrade",
+    "foto": "https://i.pravatar.cc/150?img=37",
+    "cargo": "Product Designer",
+    "resumo": "Cria experiências digitais centradas no usuário.",
+    "localizacao": "São Paulo/SP",
+    "area": "Design de Produto",
+    "habilidadesTecnicas": ["Figma", "Design System", "Prototipagem"],
+    "softSkills": ["Empatia", "Colaboração"],
+    "experiencias": [
+      {"empresa": "UXLab", "cargo": "Product Designer", "inicio": "2021-04", "fim": "2024-11", "descricao": "Desenvolvimento de fluxos de interface e testes de usabilidade."}
+    ],
+    "formacao": [
+      {"curso": "Design Digital", "instituicao": "Mackenzie", "ano": 2020}
+    ],
+    "projetos": [
+      {"titulo": "App de Finanças Pessoais", "link": "https://github.com/sabrinaandrade", "descricao": "Design de interface mobile com foco em clareza e acessibilidade."}
+    ],
+    "certificacoes": ["UX-PM Level 2"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["UX/UI"],
+    "bemEstar": {
+      "temperatura": 25.1,
+      "luminosidade": 670,
+      "som": "Silencioso",
+      "status": "Ambiente estável — criatividade fluindo"
+    }
+  },
+  {
+    "id": 38,
+    "nome": "Thiago Azevedo",
+    "foto": "https://i.pravatar.cc/150?img=38",
+    "cargo": "Desenvolvedor Full Stack",
+    "resumo": "Desenvolve soluções completas do front-end ao back-end.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "Node.js", "PostgreSQL"],
+    "softSkills": ["Comunicação", "Proatividade"],
+    "experiencias": [
+      {"empresa": "TechWave", "cargo": "Full Stack Dev", "inicio": "2019-08", "fim": "2024-11", "descricao": "Criação de aplicações completas e APIs REST."}
+    ],
+    "formacao": [
+      {"curso": "Engenharia de Computação", "instituicao": "UFC", "ano": 2018}
+    ],
+    "projetos": [
+      {"titulo": "Sistema de Reservas", "link": "https://github.com/thiagoazevedo", "descricao": "Aplicativo web completo para agendamento de serviços."}
+    ],
+    "certificacoes": ["Full Stack Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Intermediário"}],
+    "areaInteresses": ["Desenvolvimento Web", "APIs"],
+    "bemEstar": {
+      "temperatura": 27.2,
+      "luminosidade": 710,
+      "som": "Moderado",
+      "status": "Ambiente ativo — energia produtiva"
+    }
+  },
+  {
+    "id": 39,
+    "nome": "Ursula Tavares",
+    "foto": "https://i.pravatar.cc/150?img=39",
+    "cargo": "Analista de UX Research",
+    "resumo": "Realiza pesquisas com usuários e testes de usabilidade.",
+    "localizacao": "Recife/PE",
+    "area": "Pesquisa de Usuário",
+    "habilidadesTecnicas": ["Entrevistas", "Mapas de Calor", "Personas"],
+    "softSkills": ["Empatia", "Escuta ativa"],
+    "experiencias": [
+      {"empresa": "UserLab", "cargo": "UX Researcher", "inicio": "2020-03", "fim": "2024-11", "descricao": "Condução de estudos qualitativos e quantitativos de UX."}
+    ],
+    "formacao": [
+      {"curso": "Psicologia", "instituicao": "UFPE", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Pesquisa de Navegação", "link": "https://github.com/ursulatavares", "descricao": "Estudo de padrões de comportamento em e-commerces."}
+    ],
+    "certificacoes": ["UX Research Expert"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Avançado"}],
+    "areaInteresses": ["UX Research"],
+    "bemEstar": {
+      "temperatura": 24.5,
+      "luminosidade": 690,
+      "som": "Silencioso",
+      "status": "Ambiente ideal — foco analítico elevado"
+    }
+  },
+  {
+    "id": 40,
+    "nome": "Vinícius Prado",
+    "foto": "https://i.pravatar.cc/150?img=40",
+    "cargo": "Engenheiro de Machine Learning",
+    "resumo": "Cria modelos preditivos e sistemas inteligentes de aprendizado.",
+    "localizacao": "Campinas/SP",
+    "area": "Inteligência Artificial",
+    "habilidadesTecnicas": ["Python", "PyTorch", "Scikit-Learn"],
+    "softSkills": ["Curiosidade", "Persistência"],
+    "experiencias": [
+      {"empresa": "AIWorks", "cargo": "ML Engineer", "inicio": "2020-01", "fim": "2024-11", "descricao": "Treinamento e deploy de modelos de aprendizado profundo."}
+    ],
+    "formacao": [
+      {"curso": "Ciência da Computação", "instituicao": "UNICAMP", "ano": 2019}
+    ],
+    "projetos": [
+      {"titulo": "Modelo de Recomendação", "link": "https://github.com/viniciusprado", "descricao": "Sistema de recomendação baseado em machine learning."}
+    ],
+    "certificacoes": ["TensorFlow Developer"],
+    "idiomas": [{"idioma": "Inglês", "nivel": "Fluente"}],
+    "areaInteresses": ["IA", "Deep Learning"],
+    "bemEstar": {
+      "temperatura": 25.3,
+      "luminosidade": 700,
+      "som": "Silencioso",
+      "status": "Ambiente equilibrado — aprendizado contínuo"
+    }
   }
 ]
+
