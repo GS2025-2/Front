@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ onAboutClick }) {
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm sticky top-0 z-50">
       <div className="container flex items-center justify-between py-3">
@@ -12,7 +12,7 @@ export default function Header() {
         <nav className="flex items-center gap-6 text-sm">
           <button className="nav-link">Talentos</button>
           <button className="nav-link">Oportunidades</button>
-          <button className="nav-link">Sobre o Projeto</button>
+          <button onClick={onAboutClick} className="nav-link">Sobre o Projeto</button>
         </nav>
       </div>
     </header>
