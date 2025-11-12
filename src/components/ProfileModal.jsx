@@ -7,6 +7,13 @@ export default function ProfileModal({ profile, onClose }) {
   const [showWellness, setShowWellness] = useState(false)
   const bem = profile.bemEstar
 
+  // FUNÇÃO CORRIGIDA para checar null
+  const getDisplayValue = (value, unit = '') => {
+    // Se o valor for estritamente null, retorna a mensagem de aviso.
+    // Isso garante que se o Node-RED retornar null, a mensagem de desligado é exibida.
+    return value !== null ? `${value}${unit}` : 'N/A (Sensores Desligados)'
+  }
+
   const sendMessage = () => {
     if (!message.trim()) return
     Swal.fire({
@@ -33,21 +40,33 @@ export default function ProfileModal({ profile, onClose }) {
       Swal.fire({
         icon: 'info',
         title: 'Sem dados de bem-estar',
-        text: `${profile.nome} ainda não possui informações registradas.`,
+        text: 'Não foi possível carregar as informações de bem-estar.',
         confirmButtonColor: '#0A66C2',
       })
       return
     }
+
+    const statusText = bem.status || 'Status não disponível';
+    
+    // 🟢 USO DA FUNÇÃO CORRIGIDA
+    const temp = getDisplayValue(bem.temperatura, '°C');
+    const lux = getDisplayValue(bem.luminosidade, ' lux');
+    // Adicionado uma unidade para som
+    const sound = getDisplayValue(bem.som, ' dB'); 
+    
+    // Verifica se os sensores estão desligados para aplicar a cor de aviso no status
+    const isSensorOff = bem.temperatura === null;
 
     if (!showWellness) {
       Swal.fire({
         title: '🧘‍♂️ Dados de Bem-Estar',
         html: `
           <div style="text-align:left; line-height:1.6;">
-            <p><strong>🌡️ Temperatura:</strong> ${bem.temperatura}°C</p>
-            <p><strong>💡 Luminosidade:</strong> ${bem.luminosidade} lux</p>
-            <p><strong>🔊 Som:</strong> ${bem.som}</p>
-            <p style="margin-top:8px; color:#555;">${bem.status}</p>
+            <p><strong>🌡️ Temperatura:</strong> ${temp}</p>
+            <p><strong>💡 Luminosidade:</strong> ${lux}</p>
+            <p><strong>🔊 Som:</strong> ${sound}</p>
+            
+            <p style="margin-top:12px; font-weight: bold; color:${isSensorOff ? '#EF4444' : '#0A66C2'};">${statusText}</p>
           </div>
         `,
         confirmButtonText: 'Fechar',
@@ -85,6 +104,8 @@ export default function ProfileModal({ profile, onClose }) {
               {profile.cargo}
             </p>
             <p className="text-xs text-gray-400">{profile.localizacao}</p>
+            
+            {/* NENHUM STATUS DO AMBIENTE É EXIBIDO AQUI - MANTENDO O REQUISITO */}
           </div>
 
           {/* Lado direito: detalhes */}

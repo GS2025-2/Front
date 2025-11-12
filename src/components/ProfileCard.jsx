@@ -1,4 +1,10 @@
 export default function ProfileCard({ profile, onOpen }) {
+  // Ajuste de onOpen sem o status do ambiente
+  const handleOpen = (e) => {
+    e.stopPropagation();
+    onOpen(profile);
+  };
+    
   return (
     <article
       onClick={() => onOpen(profile)}
@@ -20,10 +26,12 @@ export default function ProfileCard({ profile, onOpen }) {
           <span key={i} className="skill">{s}</span>
         ))}
       </div>
+      
+      {/* NENHUM STATUS DO AMBIENTE É EXIBIDO AQUI */}
 
       <div className="mt-4">
         <button
-          onClick={(e) => { e.stopPropagation(); onOpen(profile) }}
+          onClick={handleOpen}
           className="btn-secondary"
         >
           Ver perfil
