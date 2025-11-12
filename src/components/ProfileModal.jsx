@@ -7,13 +7,6 @@ export default function ProfileModal({ profile, onClose }) {
   const [showWellness, setShowWellness] = useState(false)
   const bem = profile.bemEstar
 
-  // FUNÇÃO CORRIGIDA para checar null
-  const getDisplayValue = (value, unit = '') => {
-    // Se o valor for estritamente null, retorna a mensagem de aviso.
-    // Isso garante que se o Node-RED retornar null, a mensagem de desligado é exibida.
-    return value !== null ? `${value}${unit}` : 'N/A (Sensores Desligados)'
-  }
-
   const sendMessage = () => {
     if (!message.trim()) return
     Swal.fire({
@@ -40,33 +33,21 @@ export default function ProfileModal({ profile, onClose }) {
       Swal.fire({
         icon: 'info',
         title: 'Sem dados de bem-estar',
-        text: 'Não foi possível carregar as informações de bem-estar.',
+        text: `${profile.nome} ainda não possui informações registradas.`,
         confirmButtonColor: '#0A66C2',
       })
       return
     }
-
-    const statusText = bem.status || 'Status não disponível';
-    
-    // 🟢 USO DA FUNÇÃO CORRIGIDA
-    const temp = getDisplayValue(bem.temperatura, '°C');
-    const lux = getDisplayValue(bem.luminosidade, ' lux');
-    // Adicionado uma unidade para som
-    const sound = getDisplayValue(bem.som, ' dB'); 
-    
-    // Verifica se os sensores estão desligados para aplicar a cor de aviso no status
-    const isSensorOff = bem.temperatura === null;
 
     if (!showWellness) {
       Swal.fire({
         title: '🧘‍♂️ Dados de Bem-Estar',
         html: `
           <div style="text-align:left; line-height:1.6;">
-            <p><strong>🌡️ Temperatura:</strong> ${temp}</p>
-            <p><strong>💡 Luminosidade:</strong> ${lux}</p>
-            <p><strong>🔊 Som:</strong> ${sound}</p>
-            
-            <p style="margin-top:12px; font-weight: bold; color:${isSensorOff ? '#EF4444' : '#0A66C2'};">${statusText}</p>
+            <p><strong>🌡️ Temperatura:</strong> ${bem.temperatura}°C</p>
+            <p><strong>💡 Luminosidade:</strong> ${bem.luminosidade} lux</p>
+            <p><strong>🔊 Som:</strong> ${bem.som}</p>
+            <p style="margin-top:8px; color:#555;">${bem.status}</p>
           </div>
         `,
         confirmButtonText: 'Fechar',
@@ -83,59 +64,61 @@ export default function ProfileModal({ profile, onClose }) {
         className="modal-content relative"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Botão fechar */}
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-gray-400 hover:text-gray-600"
+          className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
         >
           ✖
         </button>
 
         <div className="flex flex-col sm:flex-row gap-6">
-          {/* Lado esquerdo: foto e dados básicos */}
           <div className="flex flex-col items-center text-center sm:w-1/3">
             <img
               src={profile.foto}
               alt={profile.nome}
               className="w-28 h-28 rounded-full object-cover border-4 border-[color:var(--linkedin-blue)]"
             />
-            <h2 className="text-xl font-semibold mt-3">{profile.nome}</h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <h2 className="text-xl font-semibold mt-3 text-gray-800 dark:text-gray-100">
+              {profile.nome}
+            </h2>
+            <p className="text-sm text-gray-600 dark:text-gray-300">
               {profile.cargo}
             </p>
-            <p className="text-xs text-gray-400">{profile.localizacao}</p>
-            
-            {/* NENHUM STATUS DO AMBIENTE É EXIBIDO AQUI - MANTENDO O REQUISITO */}
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              {profile.localizacao}
+            </p>
           </div>
 
-          {/* Lado direito: detalhes */}
           <div className="sm:w-2/3">
-            <h3 className="font-semibold text-[color:var(--linkedin-blue)] mb-2">
+            <h3 className="font-semibold text-[color:var(--linkedin-blue)] dark:text-blue-400 mb-2">
               Resumo
             </h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+            <p className="text-sm text-gray-700 dark:text-gray-200 mb-4">
               {profile.resumo}
             </p>
 
-            <h3 className="font-semibold mb-2">Habilidades</h3>
+            <h3 className="font-semibold mb-2 text-gray-800 dark:text-gray-100">
+              Habilidades
+            </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               {(profile.habilidadesTecnicas || []).map((s, i) => (
-                <span key={i} className="skill">
+                <span
+                  key={i}
+                  className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-2 py-1 rounded"
+                >
                   {s}
                 </span>
               ))}
             </div>
 
-            {/* Caixa de mensagem */}
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Envie uma mensagem profissional..."
-              className="input w-full mb-3"
+              className="input w-full mb-3 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
               rows={3}
             ></textarea>
 
-            {/* Botões de ação */}
             <div className="flex flex-wrap gap-3">
               <button onClick={sendMessage} className="btn-primary">
                 Enviar Mensagem
@@ -149,7 +132,6 @@ export default function ProfileModal({ profile, onClose }) {
                 {recommended ? 'Recomendado ✅' : 'Recomendar'}
               </button>
 
-              {/* 🧘‍♂️ Botão de Bem-Estar */}
               <button onClick={toggleWellness} className="btn-secondary">
                 Bem-Estar do Ambiente
               </button>
