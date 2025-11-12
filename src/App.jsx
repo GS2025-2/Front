@@ -211,6 +211,15 @@ export default function App() {
             o compromisso com inovação e o uso consciente da tecnologia como ferramenta de inclusão e evolução profissional.
           </p>
 
+          {/* 🧠 Novo parágrafo sobre o ESP32 */}
+          <p className="leading-relaxed mb-6">
+            Além da aplicação web, o projeto também inclui um <strong>protótipo físico desenvolvido com ESP32</strong> (como protótipo, funciona de forma local),
+            que atua como um módulo de monitoramento ambiental corporativo. Por meio de sensores de luminosidade, temperatura e som,
+            o dispositivo coleta dados do ambiente de trabalho e os envia em tempo real para o sistema, demonstrando como a
+            <strong> Internet das Coisas (IoT)</strong> pode ser integrada ao NextWork para promover ambientes mais saudáveis, produtivos e sustentáveis.
+            Essa integração reforça a visão de um futuro do trabalho conectado, onde tecnologia e bem-estar caminham lado a lado nas empresas.
+          </p>
+
           <p className="leading-relaxed mb-2 text-sm italic text-gray-600 dark:text-gray-400">
             Requisitos: SPA com HTML + React + Tailwind | 10 commits mínimos | JSON local | Cards interativos | Modal funcional | Filtros e Dark Mode
           </p>
