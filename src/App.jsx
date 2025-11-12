@@ -46,6 +46,7 @@ export default function App() {
   const [theme, setThemeState] = useState(getInitialTheme())
   const [dadosSensores, setDadosSensores] = useState(DADOS_FICTICIOS_FALLBACK) 
   const [ultimoUpdate, setUltimoUpdate] = useState(Date.now()) // Guarda o momento da última atualização real
+  const [aboutRef] = useState(React.createRef()) // 👈 referência para rolar até o fim
 
   // Alterna entre modo claro e escuro
   useEffect(() => {
@@ -145,10 +146,10 @@ export default function App() {
   const closeProfile = () => setSelected(null)
 
   return (
-    <div className="min-h-screen bg-[color:var(--linkedin-light)] dark:bg-[color:var(--linkedin-dark)]">
-      <Header />
+    <div className="min-h-screen bg-[color:var(--linkedin-light)] dark:bg-[color:var(--linkedin-dark)] transition-colors">
+      <Header onAboutClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })} />
       <div className="container py-6">
-        {/* 🔍 Filtros e botão modo escuro alinhados na mesma linha */}
+        {/* 🔍 Filtros + botões */}
         <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
           <div className="flex flex-1 flex-wrap items-end gap-3">
             <SearchFilters
@@ -162,6 +163,7 @@ export default function App() {
           </div>
         </div>
 
+        {/* 👥 Perfis */}
         {loading ? (
           <div className="text-center text-gray-500 dark:text-gray-300 py-10">Carregando perfis...</div>
         ) : filtered.length > 0 ? (
@@ -175,6 +177,77 @@ export default function App() {
         )}
 
         {selected && <ProfileModal profile={selected} onClose={closeProfile} />}
+
+        {/* 📘 SOBRE O PROJETO - no final da página */}
+        <section
+          ref={aboutRef}
+          id="sobre-projeto"
+          className="animate-fade-in bg-white dark:bg-[color:var(--linkedin-card-dark)] rounded-xl shadow-md p-6 mt-12 mb-10 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300"
+        >
+          <h2 className="text-2xl font-bold mb-3 text-[color:var(--linkedin-blue)] dark:text-[color:var(--linkedin-accent)] text-center">
+            Sobre o Projeto
+          </h2>
+          <p className="leading-relaxed mb-4">
+            <strong>Tema:</strong> O Futuro do Trabalho – Conectando pessoas, competências e propósito por meio da tecnologia.
+          </p>
+          <p className="leading-relaxed mb-4">
+            <strong>Contexto:</strong> Inspirada no desafio proposto para a Global Solution, esta atividade convida os alunos a refletirem
+            sobre como a tecnologia pode transformar as relações profissionais e promover um futuro do trabalho mais justo,
+            inclusivo e sustentável.
+          </p>
+          <p className="leading-relaxed mb-4">
+            A partir dessa perspectiva, o projeto propõe a criação de uma plataforma web colaborativa, semelhante ao LinkedIn,
+            voltada à conexão entre profissionais de diferentes áreas, incentivando o desenvolvimento de competências, a troca
+            de experiências e a colaboração entre talentos.
+          </p>
+          <p className="leading-relaxed mb-4">
+            <strong>Objetivo:</strong> Desenvolver uma aplicação web interativa utilizando <strong>HTML</strong>, <strong>Tailwind CSS</strong> e <strong>React</strong>, que
+            simule uma rede profissional voltada ao futuro do trabalho. A aplicação permite explorar perfis fictícios de profissionais
+            com dados pessoais, acadêmicos, técnicos e comportamentais — promovendo uma experiência moderna, funcional e intuitiva.
+          </p>
+          <p className="leading-relaxed mb-4">
+            O <strong>NextWork</strong> conta com listagem dinâmica de perfis, sistema de busca e filtros, modal com informações completas,
+            design responsivo, dark mode e integração com um JSON local contendo mais de 60 perfis simulados. O projeto reflete
+            o compromisso com inovação e o uso consciente da tecnologia como ferramenta de inclusão e evolução profissional.
+          </p>
+
+          <p className="leading-relaxed mb-2 text-sm italic text-gray-600 dark:text-gray-400">
+            Requisitos: SPA com HTML + React + Tailwind | 10 commits mínimos | JSON local | Cards interativos | Modal funcional | Filtros e Dark Mode
+          </p>
+
+          {/* 👩‍💻 Equipe de Desenvolvimento */}
+          <div className="mt-10">
+            <h3 className="text-xl font-semibold mb-6 text-center text-[color:var(--linkedin-blue)] dark:text-[color:var(--linkedin-accent)]">
+              Equipe de Desenvolvimento
+            </h3>
+            <div className="flex flex-wrap justify-center gap-10">
+              <div className="flex flex-col items-center text-center">
+                <img src="/Anna.jpg" alt="Anna Ruggeri" className="w-28 h-28 rounded-full object-cover shadow-md border-2 border-[color:var(--linkedin-blue)] dark:border-[color:var(--linkedin-accent)] mb-3" />
+                <p className="font-medium text-lg">Anna Ruggeri</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <img src="/Giovana.jpg" alt="Giovana Bernardino" className="w-28 h-28 rounded-full object-cover shadow-md border-2 border-[color:var(--linkedin-blue)] dark:border-[color:var(--linkedin-accent)] mb-3" />
+                <p className="font-medium text-lg">Giovana Bernardino</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <img src="/Henrique.jpg" alt="Henrique Vicente" className="w-28 h-28 rounded-full object-cover shadow-md border-2 border-[color:var(--linkedin-blue)] dark:border-[color:var(--linkedin-accent)] mb-3" />
+                <p className="font-medium text-lg">Henrique Vicente</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ⬇️ FOOTER no final da página */}
+        <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-t border-gray-200 dark:border-gray-800 py-4 mt-10">
+          <div className="max-w-6xl mx-auto px-4 flex items-center justify-center">
+            <p className="text-sm text-center">
+              © 2025 Projeto Acadêmico FIAP — Todos os direitos reservados.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   )
